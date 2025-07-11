@@ -2,69 +2,81 @@
 <html lang="bn">
 <head>
     <meta charset="UTF-8">
-    <title>About CUSADS</title>
+    <title>CUSADS | আমাদের সম্পর্কে</title>
     <style>
         body {
             font-family: 'Segoe UI', sans-serif;
-            background: #f4f4f4;
+            background: #f0f4f8;
             margin: 0;
             padding: 0;
+        }
+
+        .about-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
             text-align: center;
         }
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-            gap: 10px;
-            max-width: 800px;
-            margin: 30px auto;
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
         }
-        .image-grid img {
-            width: 100%;
-            height: 100px;
+
+        .gallery img {
+            width: 120px;
+            height: 160px;
             object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-        }
-        .about-section {
-            background: #ffffff;
-            padding: 30px 20px;
-            max-width: 800px;
-            margin: auto;
             border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
         }
-        .about-section h2 {
-            color: #0a8046;
-            margin-bottom: 20px;
+
+        .gallery img:hover {
+            transform: scale(1.05);
         }
-        .about-section p {
-            text-align: justify;
-            font-size: 16px;
-            line-height: 1.8;
+
+        h2 {
+            color: #0a7d55;
+            margin-bottom: 15px;
+        }
+
+        p {
             color: #333;
+            font-size: 16px;
+            line-height: 1.7;
+            text-align: justify;
         }
+
         .buttons {
-            margin-top: 20px;
+            margin-top: 25px;
         }
+
         .buttons a {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            background: #0a8046;
-            color: white;
             text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-            transition: 0.3s ease;
+            background: #0a7d55;
+            color: white;
+            padding: 12px 20px;
+            margin: 0 10px;
+            border-radius: 8px;
+            transition: background 0.3s;
         }
+
         .buttons a:hover {
-            background: #086138;
+            background: #055d3c;
         }
     </style>
 </head>
 <body>
 
-    <div class="image-grid">
+<div class="about-section">
+    <div class="gallery">
         <img src="images/pic1.jpg" alt="">
         <img src="images/pic2.jpg" alt="">
         <img src="images/pic3.jpg" alt="">
@@ -81,22 +93,19 @@
         <img src="images/pic14.jpg" alt="">
     </div>
 
-    <div class="about-section">
-        <h2>আমাদের সম্পর্কে – CUSADS</h2>
-        <p>
-            চট্টগ্রাম বিশ্ববিদ্যালয়ের ধামরাই ও সাভার অঞ্চলের শিক্ষার্থীদের সংগঠন CUSADS একটি অরাজনৈতিক, অ-লাভজনক ছাত্র সংগঠন, 
-            যার মূল লক্ষ্য হলো সাভার ও ধামরাই এলাকার শিক্ষার্থীদের একত্রিত করে একটি ঐক্যবদ্ধ প্ল্যাটফর্ম গঠন করা। 
-            আমরা বিশ্বাস করি, পারস্পরিক সহযোগিতা ও বন্ধুত্বপূর্ণ পরিবেশ শিক্ষার্থীদের মানসিক ও একাডেমিক উন্নয়নে গুরুত্বপূর্ণ ভূমিকা পালন করে।
-        </p>
-        <p>
-            আমাদের কার্যক্রমের মধ্যে রয়েছে – নতুন শিক্ষার্থীদের সহায়তা, তথ্য শেয়ারিং, মিলনমেলা, সাংস্কৃতিক অনুষ্ঠান, শিক্ষা সহায়তা ও 
-            প্রয়োজনীয় তথ্যভাণ্ডার তৈরি। এই সংগঠনটি সদস্যদের মধ্যে বন্ধুত্ব, নেতৃত্ব, ও সমাজের প্রতি দায়বদ্ধতা গড়ে তুলতে কাজ করে চলেছে।
-        </p>
-        <div class="buttons">
-            <a href="#">আরও জানুন</a>
-            <a href="#">যোগাযোগ করুন</a>
-        </div>
+    <h2>চট্টগ্রাম বিশ্ববিদ্যালয়ের ধামরাই ও সাভার অঞ্চলের শিক্ষার্থীদের সংগঠন</h2>
+    <p>
+        <strong>Chittagong University Students Association of Dhamrai & Savar (CUSADS)</strong> একটি স্বেচ্ছাসেবী ও অরাজনৈতিক শিক্ষার্থী সংগঠন, যা চট্টগ্রাম বিশ্ববিদ্যালয়ে অধ্যয়নরত ধামরাই ও সাভার এলাকার শিক্ষার্থীদের মধ্যে পারস্পরিক বন্ধন, সহযোগিতা ও সংহতি বৃদ্ধির লক্ষ্য নিয়ে কাজ করে যাচ্ছে।
+    </p>
+    <p>
+        এই সংগঠনের মাধ্যমে আমরা একে অপরের পাশে দাঁড়াতে শিখি, তথ্য ও অভিজ্ঞতা ভাগ করে নিই, নবাগতদের সহায়তা করি এবং বিভিন্ন সামাজিক, শিক্ষামূলক ও সাংস্কৃতিক কার্যক্রমে সক্রিয় অংশগ্রহণ নিশ্চিত করি। আমাদের লক্ষ্য একটি বন্ধুত্বপূর্ণ ও শক্তিশালী কমিউনিটি তৈরি করা, যা আমাদের নিজ নিজ উন্নয়নের পাশাপাশি সমাজেও ইতিবাচক প্রভাব ফেলতে পারে।
+    </p>
+
+    <div class="buttons">
+        <a href="#readmore">আরও জানুন</a>
+        <a href="#contact">যোগাযোগ করুন</a>
     </div>
+</div>
 
 </body>
 </html>
