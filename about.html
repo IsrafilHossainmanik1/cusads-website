@@ -1,111 +1,154 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <title>CUSADS | আমাদের সম্পর্কে</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background: #f0f4f8;
-            margin: 0;
-            padding: 0;
-        }
-
-        .about-section {
-            max-width: 1200px;
-            margin: 50px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 30px;
-        }
-
-        .gallery img {
-            width: 120px;
-            height: 160px;
-            object-fit: cover;
-            border-radius: 12px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-
-        h2 {
-            color: #0a7d55;
-            margin-bottom: 15px;
-        }
-
-        p {
-            color: #333;
-            font-size: 16px;
-            line-height: 1.7;
-            text-align: justify;
-        }
-
-        .buttons {
-            margin-top: 25px;
-        }
-
-        .buttons a {
-            text-decoration: none;
-            background: #0a7d55;
-            color: white;
-            padding: 12px 20px;
-            margin: 0 10px;
-            border-radius: 8px;
-            transition: background 0.3s;
-        }
-
-        .buttons a:hover {
-            background: #055d3c;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>About | CUSADS</title>
+  <style>
+    body {
+      font-family: 'Kalpurush', Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 20px;
+      margin-top: 0;
+      color: #0a75ad;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .gallery img {
+      width: 200px;
+      height: 220px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .description {
+      max-width: 900px;
+      margin: 40px auto 20px;
+      text-align: justify;
+      font-size: 17px;
+      line-height: 1.7;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    .more-text {
+      display: none;
+      margin-top: 15px;
+    }
+    .show-more-btn {
+      display: block;
+      margin: 15px auto;
+      background: #0a75ad;
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    .contact {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .contact a, .contact button {
+      display: inline-block;
+      background: #0a75ad;
+      color: white;
+      text-decoration: none;
+      padding: 10px 18px;
+      margin: 5px;
+      border-radius: 6px;
+      font-size: 15px;
+      border: none;
+      cursor: pointer;
+    }
+    form {
+      max-width: 500px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-family: inherit;
+    }
+  </style>
 </head>
 <body>
 
-<div class="about-section">
-    <div class="gallery">
-        <img src="images/pic1.jpg" alt="">
-        <img src="images/pic2.jpg" alt="">
-        <img src="images/pic3.jpg" alt="">
-        <img src="images/pic4.jpg" alt="">
-        <img src="images/pic5.jpg" alt="">
-        <img src="images/pic6.jpg" alt="">
-        <img src="images/pic7.jpg" alt="">
-        <img src="images/pic8.jpg" alt="">
-        <img src="images/pic9.jpg" alt="">
-        <img src="images/pic10.jpg" alt="">
-        <img src="images/pic11.jpg" alt="">
-        <img src="images/pic12.jpg" alt="">
-        <img src="images/pic13.jpg" alt="">
-        <img src="images/pic14.jpg" alt="">
-    </div>
+  <h1>CUSADS Family – Member Showcase</h1>
+  <h2>Meet Our Proud Members of CUSADS</h2>
+  <h2>Chittagong University Students Association of Dhamrai & Savar</h2>
 
-    <h2>চট্টগ্রাম বিশ্ববিদ্যালয়ের ধামরাই ও সাভার অঞ্চলের শিক্ষার্থীদের সংগঠন</h2>
+  <div class="gallery">
+    <img src="images/1.jpg" alt="">
+    <img src="images/2.jpg" alt="">
+    <img src="images/3.jpg" alt="">
+    <img src="images/4.jpg" alt="">
+    <img src="images/5.jpg" alt="">
+    <img src="images/6.jpg" alt="">
+    <img src="images/7.jpg" alt="">
+    <img src="images/8.jpg" alt="">
+    <img src="images/9.jpg" alt="">
+    <img src="images/10.jpg" alt="">
+    <img src="images/11.jpg" alt="">
+    <img src="images/12.jpg" alt="">
+    <img src="images/13.jpg" alt="">
+    <img src="images/14.jpg" alt="">
+  </div>
+
+  <div class="description">
     <p>
-        <strong>Chittagong University Students Association of Dhamrai & Savar (CUSADS)</strong> একটি স্বেচ্ছাসেবী ও অরাজনৈতিক শিক্ষার্থী সংগঠন, যা চট্টগ্রাম বিশ্ববিদ্যালয়ে অধ্যয়নরত ধামরাই ও সাভার এলাকার শিক্ষার্থীদের মধ্যে পারস্পরিক বন্ধন, সহযোগিতা ও সংহতি বৃদ্ধির লক্ষ্য নিয়ে কাজ করে যাচ্ছে।
-    </p>
-    <p>
-        এই সংগঠনের মাধ্যমে আমরা একে অপরের পাশে দাঁড়াতে শিখি, তথ্য ও অভিজ্ঞতা ভাগ করে নিই, নবাগতদের সহায়তা করি এবং বিভিন্ন সামাজিক, শিক্ষামূলক ও সাংস্কৃতিক কার্যক্রমে সক্রিয় অংশগ্রহণ নিশ্চিত করি। আমাদের লক্ষ্য একটি বন্ধুত্বপূর্ণ ও শক্তিশালী কমিউনিটি তৈরি করা, যা আমাদের নিজ নিজ উন্নয়নের পাশাপাশি সমাজেও ইতিবাচক প্রভাব ফেলতে পারে।
+      চট্টগ্রাম বিশ্ববিদ্যালয়ে অধ্যয়নরত ঢাকার সাভার ও ধামরাই এলাকার ছাত্রদের নিয়ে গঠিত হয়েছে "Chittagong University Students Association of Dhamrai & Savar" (CUSADS)। 
+      এই সংগঠন আমাদের এলাকা থেকে আগত ছাত্রদের মধ্যে সুদৃঢ় বন্ধন, পারস্পরিক সহযোগিতা এবং সাংগঠনিক ঐক্য গঠনের জন্য কাজ করে যাচ্ছে।
     </p>
 
-    <div class="buttons">
-        <a href="#readmore">আরও জানুন</a>
-        <a href="#contact">যোগাযোগ করুন</a>
+    <div class="more-text" id="moreText">
+      <p>
+        আমরা একে অপরের পাশে দাঁড়াই ভর্তি থেকে শুরু করে বাসস্থানের ব্যবস্থা, একাডেমিক সহায়তা, সাংস্কৃতিক ও ক্রীড়া কার্যক্রম সহ নানাবিধ কর্মকাণ্ডে। 
+        CUSADS এর মূল উদ্দেশ্য হলো — "সংযুক্তি, সহায়তা ও সচেতনতা"। 
+        আমরা বিশ্বাস করি, ঐক্যবদ্ধ থেকে আমরা আরও সুন্দর ভবিষ্যৎ গড়ে তুলতে পারি।
+      </p>
     </div>
-</div>
+    
+    <button class="show-more-btn" onclick="document.getElementById('moreText').style.display='block'; this.style.display='none';">আরও জানুন</button>
+  </div>
+
+  <div class="contact">
+    <a href="mailto:cusads25@gmail.com?subject=Contact%20from%20CUSADS%20Website&body=Assalamu%20Alaikum,%0Aআমি আপনার ওয়েবসাইট দেখে যোগাযোগ করছি...">ইমেইলে যোগাযোগ করুন</a>
+    
+    <form action="https://formsubmit.co/cusads25@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="আপনার নাম" required>
+      <input type="email" name="email" placeholder="আপনার ইমেইল" required>
+      <textarea name="message" rows="5" placeholder="আপনার বার্তা লিখুন..." required></textarea>
+      <button type="submit">পাঠান</button>
+    </form>
+  </div>
 
 </body>
 </html>
