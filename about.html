@@ -145,16 +145,19 @@
     <button class="show-more-btn" onclick="document.getElementById('moreText').style.display='block'; this.style.display='none';">আরও জানুন</button>
   </div>
 
-  <div class="contact">
-    <a href="mailto:cusads25@gmail.com?subject=Contact%20from%20CUSADS%20Website&body=Assalamu%20Alaikum,%0Aআমি আপনার ওয়েবসাইট দেখে যোগাযোগ করছি...">ইমেইলে যোগাযোগ করুন</a>
-    
-    <form action="https://formsubmit.co/cusads25@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="আপনার নাম" required>
-      <input type="email" name="email" placeholder="আপনার ইমেইল" required>
-      <textarea name="message" rows="5" placeholder="আপনার বার্তা লিখুন..." required></textarea>
-      <button type="submit">পাঠান</button>
-    </form>
-  </div>
+<div class="contact">
+  <a href="mailto:cusads25@gmail.com?subject=Contact%20from%20CUSADS%20Website&body=Assalamu%20Alaikum,%0Aআমি আপনার ওয়েবসাইট দেখে যোগাযোগ করছি...">ইমেইলে যোগাযোগ করুন</a>
 
+  <!-- ✅ এখানে নতুন formsubmit form -->
+  <form action="https://formsubmit.co/cusads25@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://israfilhossainmanik1.github.io/thanks.html">
+
+    <input type="text" name="name" placeholder="আপনার নাম" required>
+    <input type="email" name="email" placeholder="আপনার ইমেইল" required>
+    <textarea name="message" rows="5" placeholder="আপনার বার্তা লিখুন..." required></textarea>
+    <button type="submit">পাঠান</button>
+  </form>
+</div>
 </body>
 </html>
