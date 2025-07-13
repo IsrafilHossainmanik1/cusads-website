@@ -108,6 +108,15 @@
             color: #ffcc80;
             text-decoration: none;
         }
+
+.toggle-btn {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 10px;
+}
+        
     </style>
 </head>
 <body>
@@ -132,29 +141,29 @@
 <h2>Session: 2018-2019</h2>
 <div class="container">
 
-        <div class="card">
-            <img src="images/Saimon Ahmed.jpg" alt="Saimon Ahmed">
-            <div class="info">
-                <h3>Md. Saimon</h3>
-                <p><strong>Dept:</strong> Geography and Environmental Studies </p>
-                <p><strong>Session:</strong> 2018-2019</p>
- <div class="more-text" id="moreText">
-       <button class="show-more-btn" onclick="document.getElementById('moreText').style.display='block'; this.style.display='none';">আরও জানুন</button>
-  </div>
-                <p><strong>School:</strong> Bpatc school and College  (SSC 2016)</p>
-                <p><strong>College:</strong> Bpatc school and College  (HSC 2018)</p>
-                <p><strong>Present Address:</strong> Bank town, savar. </p>
-                <p><strong>Permanent Address:</strong> Khustia </p>
-                <p><strong>Mobile:</strong> <a href="tel:01860014837">01860014837</a></p>
-                <p><strong>Facebook:</strong> <a href="https://www.facebook.com/share/16BKwX412v/" target="_blank">View Profile</a></p>
-                <p><strong>Email:</strong> <a href="mailto:saimonahmed1960@gmail.com">saimonahmed1960@gmail.com</a></p>
-                <p><strong>Status:</strong> Ms</p>
-                <p><strong>Occupation:</strong> Student </p>
-                <p><strong>Religion:</strong> Islam</p>
-                <p><strong>Blood Group:</strong> nan</p>
-    
+    <!-- Md. Saimon -->
+<div class="card">
+    <img src="images/Saimon Ahmed.jpg" alt="Saimon Ahmed">
+    <div class="info">
+        <h3>Md. Saimon</h3>
+        <p><strong>Dept:</strong> Geography and Environmental Studies </p>
+        <p><strong>Session:</strong> 2018-2019</p>
+        <span class="toggle-btn" onclick="toggleDetails(this)">More Details...</span>
+        <div class="more-details" style="display: none;">
+            <p><strong>School:</strong> Bpatc school and College (SSC 2016)</p>
+            <p><strong>College:</strong> Bpatc school and College (HSC 2018)</p>
+            <p><strong>Present Address:</strong> Bank town, savar. </p>
+            <p><strong>Permanent Address:</strong> Khustia </p>
+            <p><strong>Mobile:</strong> <a href="tel:01860014837">01860014837</a></p>
+            <p><strong>Facebook:</strong> <a href="https://www.facebook.com/share/16BKwX412v/" target="_blank">View Profile</a></p>
+            <p><strong>Email:</strong> <a href="mailto:saimonahmed1960@gmail.com">saimonahmed1960@gmail.com</a></p>
+            <p><strong>Status:</strong> Ms</p>
+            <p><strong>Occupation:</strong> Student </p>
+            <p><strong>Religion:</strong> Islam</p>
+            <p><strong>Blood Group:</strong> nan</p>
         </div>
-         </div>
+    </div>
+</div>
         <div class="card">
                        <img src="images/Rafid Mahmud.jpg" alt="Rafid Mahmud">
             <div class="info">
@@ -622,6 +631,17 @@
             Israfil Hossain Manik
         </a>
     </footer>
-
+<script>
+    function toggleDetails(btn) {
+        const details = btn.nextElementSibling;
+        if (details.style.display === "none" || details.style.display === "") {
+            details.style.display = "block";
+            btn.textContent = "Hide Details";
+        } else {
+            details.style.display = "none";
+            btn.textContent = "More Details...";
+        }
+    }
+</script>
 </body>
 </html>
