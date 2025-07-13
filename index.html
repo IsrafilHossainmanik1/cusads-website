@@ -56,7 +56,49 @@
     </style>
 </head>
 <body>
+<!-- 🌐 সুন্দর বক্সের মধ্যে Navigation Menu -->
+<div class="top-navbar">
+  <ul class="nav-links">
+    <li><a href="index.html">হোম</a></li>
+    <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+    <li><a href="members.html">সদস্য তালিকা</a></li>
+  </ul>
+</div>
 
+<style>
+  .top-navbar {
+    background: #e0f7f7;
+    padding: 10px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 95%;
+    max-width: 1100px;
+    margin: 20px auto;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-links li a {
+    text-decoration: none;
+    color: #0a75ad;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  .nav-links li a:hover {
+    background: #0a75ad;
+    color: white;
+  }
+</style>
     <header>
         <img src="logo.png" alt="CUSADS Logo" class="logo">
         <h1>চট্টগ্রাম বিশ্ববিদ্যালয় ধামরাই ও সাভার ছাত্র-ছাত্রী কল্যাণ সমিতি (CUSADS)</h1>
