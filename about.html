@@ -3,25 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <title>About | CUSADS</title>
+  <link rel="stylesheet" href="style.css"> <!-- Optional: Keep if you're using external CSS -->
   <style>
     body {
-      font-family: 'Kalpurush', Arial, sans-serif;
-      background: #f4f4f4;
       margin: 0;
-      padding: 20px;
+      font-family: 'Arial', sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: #333;
     }
+
+    header {
+      background-color: rgba(0, 77, 64, 0.9);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .logo {
+      height: 80px;
+    }
+
+    .nav-box {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+      padding: 10px;
+      background: #ffffff;
+      border-radius: 8px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+
+    .nav-box a {
+      text-decoration: none;
+      background: #0a75ad;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .nav-box a:hover {
+      background: #004d40;
+    }
+
+    main {
+      background-color: rgba(255, 255, 255, 0.95);
+      margin: 30px auto;
+      padding: 30px;
+      max-width: 1000px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #555;
+    }
+
     h1 {
       text-align: center;
       font-size: 32px;
       margin-bottom: 10px;
     }
+
     h2 {
       text-align: center;
       font-size: 20px;
       margin-top: 0;
       color: #0a75ad;
     }
+
     .gallery {
       display: flex;
       flex-wrap: wrap;
@@ -29,6 +81,7 @@
       justify-content: center;
       margin-top: 30px;
     }
+
     .gallery img {
       width: 200px;
       height: 220px;
@@ -36,9 +89,11 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
       transition: transform 0.3s ease;
     }
+
     .gallery img:hover {
       transform: scale(1.05);
     }
+
     .description {
       max-width: 900px;
       margin: 40px auto 20px;
@@ -50,10 +105,12 @@
       border-radius: 10px;
       box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
+
     .more-text {
       display: none;
       margin-top: 15px;
     }
+
     .show-more-btn {
       display: block;
       margin: 15px auto;
@@ -65,10 +122,12 @@
       cursor: pointer;
       font-size: 15px;
     }
+
     .contact {
       margin-top: 40px;
       text-align: center;
     }
+
     .contact a, .contact button {
       display: inline-block;
       background: #0a75ad;
@@ -81,6 +140,7 @@
       border: none;
       cursor: pointer;
     }
+
     form {
       max-width: 500px;
       margin: 20px auto;
@@ -89,6 +149,7 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+
     input, textarea {
       width: 100%;
       padding: 10px;
@@ -97,71 +158,98 @@
       border: 1px solid #ccc;
       font-family: inherit;
     }
+
+    footer {
+      background-color: #004d40;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #ffcc80;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
-<!-- 🏠 Back to Home Button -->
-  <div style="text-align:center;">
-    <a href="index.html" class="back-home">← 🏠হোমে ফিরে যান</a>
-  </div>
-  <h1>CUSADS GALLERRY</h1>
-  <h2>“ভ্রাতৃত্বের অটুট বন্ধনে গড়ে ওঠা ধামরাই-সাভারের শিক্ষার্থীদের সংগঠন — CUSADS”</h2>
-  <h2>  “Chittagong University Students Association of Dhamrai and Savar” (CUSADS) হলো একটি বন্ধনমূলক ছাত্রসংগঠন, যা চট্টগ্রাম বিশ্ববিদ্যালয়ে অধ্যয়নরত ও প্রাক্তন সকল সাভার ও ধামরাইয়ের শিক্ষার্থীদের একত্রিত করে একটি সুদৃঢ় বন্ধনে আবদ্ধ রাখার লক্ষ্যে গঠিত হয়েছে।
-        এই প্ল্যাটফর্মের মাধ্যমে সদস্যরা একে অপরের সাথে পরিচিত হতে পারবেন, যোগাযোগ রাখতে পারবেন এবং প্রয়োজনে সহায়তাও পেতে পারবেন।
-        আমাদের লক্ষ্য — বন্ধন, পরিচিতি ও সহযোগিতার এক ছায়াতলে সবাইকে একত্রিত করা।
-</h2>
 
-  <div class="gallery">
-    <img src="images/9.jpg" alt="">
-    <img src="images/2.jpg" alt="">
-    <img src="images/3.jpg" alt="">
-    <img src="images/7.jpg" alt="">
-    <img src="images/8.jpg" alt="">
-    <img src="images/10.jpg" alt="">
-    <img src="images/1.jpg" alt="">
-    <img src="images/11.jpg" alt="">
-    <img src="images/14.jpg" alt="">
-    <img src="images/6.jpg" alt="">
-    <img src="images/13.jpg" alt="">
-    <img src="images/12.jpg" alt="">
-    <img src="images/4.jpg" alt="">
-    <img src="images/5.jpg" alt="">
-  </div>
-
-  <div class="description">
-    <p>
-      চট্টগ্রাম বিশ্ববিদ্যালয়ে অধ্যয়নরত ঢাকার সাভার ও ধামরাই এলাকার ছাত্রদের নিয়ে গঠিত হয়েছে "Chittagong University Students Association of Dhamrai & Savar" (CUSADS)। 
-      এই সংগঠন আমাদের এলাকা থেকে আগত ছাত্রদের মধ্যে সুদৃঢ় বন্ধন, পারস্পরিক সহযোগিতা এবং সাংগঠনিক ঐক্য গঠনের জন্য কাজ করে যাচ্ছে।
-    </p>
-
-    <div class="more-text" id="moreText">
-      <p>
-        আমরা একে অপরের পাশে দাঁড়াই ভর্তি থেকে শুরু করে বাসস্থানের ব্যবস্থা, একাডেমিক সহায়তা, সাংস্কৃতিক ও ক্রীড়া কার্যক্রম সহ নানাবিধ কর্মকাণ্ডে। 
-        CUSADS এর মূল উদ্দেশ্য হলো — "সংযুক্তি, সহায়তা ও সচেতনতা"। 
-        আমরা বিশ্বাস করি, ঐক্যবদ্ধ থেকে আমরা আরও সুন্দর ভবিষ্যৎ গড়ে তুলতে পারি।
-      </p>
+  <!-- Header with nav menu (same as home page) -->
+  <header>
+    <img src="logo.png" alt="CUSADS Logo" class="logo">
+    <h1>চট্টগ্রাম বিশ্ববিদ্যালয় ধামরাই ও সাভার ছাত্র-ছাত্রী কল্যাণ সমিতি (CUSADS)</h1>
+    <div class="nav-box">
+      <a href="index.html">হোম</a>
+      <a href="about.html">আমাদের সম্পর্কে</a>
+      <a href="members.html">সদস্য তালিকা</a>
     </div>
-    
-    <button class="show-more-btn" onclick="document.getElementById('moreText').style.display='block'; this.style.display='none';">আরও জানুন</button>
-  </div>
+  </header>
 
-<div class="contact">
-  <a href="mailto:cusads25@gmail.com?subject=Contact%20from%20CUSADS%20Website&body=Assalamu%20Alaikum,%0Aআমি আপনার ওয়েবসাইট দেখে যোগাযোগ করছি...">ইমেইলে যোগাযোগ করুন</a>
-<div style="text-align:center; margin-top: 20px;">
-    <a href="https://m.me/israfilmanik12" target="_blank" style="background:#0a75ad; color:white; padding:10px 20px; border-radius:6px; text-decoration:none; font-size:16px;">
-      📩 ম্যাসেঞ্জারে যোগাযোগ করুন
+  <!-- Main Content -->
+  <main>
+    <h1>CUSADS GALLERY</h1>
+    <h2>“ভ্রাতৃত্বের অটুট বন্ধনে গড়ে ওঠা ধামরাই-সাভারের শিক্ষার্থীদের সংগঠন — CUSADS”</h2>
+    <h2>Chittagong University Students Association of Dhamrai and Savar (CUSADS)</h2>
+
+    <div class="gallery">
+      <img src="images/9.jpg" alt="">
+      <img src="images/2.jpg" alt="">
+      <img src="images/3.jpg" alt="">
+      <img src="images/7.jpg" alt="">
+      <img src="images/8.jpg" alt="">
+      <img src="images/10.jpg" alt="">
+      <img src="images/1.jpg" alt="">
+      <img src="images/11.jpg" alt="">
+      <img src="images/14.jpg" alt="">
+      <img src="images/6.jpg" alt="">
+      <img src="images/13.jpg" alt="">
+      <img src="images/12.jpg" alt="">
+      <img src="images/4.jpg" alt="">
+      <img src="images/5.jpg" alt="">
+    </div>
+
+    <div class="description">
+      <p>
+        চট্টগ্রাম বিশ্ববিদ্যালয়ে অধ্যয়নরত ঢাকার সাভার ও ধামরাই এলাকার ছাত্রদের নিয়ে গঠিত হয়েছে "Chittagong University Students Association of Dhamrai & Savar" (CUSADS)। 
+        এই সংগঠন আমাদের এলাকা থেকে আগত ছাত্রদের মধ্যে সুদৃঢ় বন্ধন, পারস্পরিক সহযোগিতা এবং সাংগঠনিক ঐক্য গঠনের জন্য কাজ করে যাচ্ছে।
+      </p>
+
+      <div class="more-text" id="moreText">
+        <p>
+          আমরা একে অপরের পাশে দাঁড়াই ভর্তি থেকে শুরু করে বাসস্থানের ব্যবস্থা, একাডেমিক সহায়তা, সাংস্কৃতিক ও ক্রীড়া কার্যক্রম সহ নানাবিধ কর্মকাণ্ডে। 
+          CUSADS এর মূল উদ্দেশ্য হলো — "সংযুক্তি, সহায়তা ও সচেতনতা"। 
+          আমরা বিশ্বাস করি, ঐক্যবদ্ধ থেকে আমরা আরও সুন্দর ভবিষ্যৎ গড়ে তুলতে পারি।
+        </p>
+      </div>
+
+      <button class="show-more-btn" onclick="document.getElementById('moreText').style.display='block'; this.style.display='none';">আরও জানুন</button>
+    </div>
+
+    <div class="contact">
+      <a href="mailto:cusads25@gmail.com?subject=Contact%20from%20CUSADS%20Website&body=Assalamu%20Alaikum,%0Aআমি আপনার ওয়েবসাইট দেখে যোগাযোগ করছি...">ইমেইলে যোগাযোগ করুন</a>
+      <div style="margin-top: 20px;">
+        <a href="https://m.me/israfilmanik12" target="_blank">📩 ম্যাসেঞ্জারে যোগাযোগ করুন</a>
+      </div>
+      <form action="https://formsubmit.co/cusads25@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://israfilhossainmanik1.github.io/thanks.html">
+
+        <input type="text" name="name" placeholder="আপনার নাম" required>
+        <input type="email" name="email" placeholder="আপনার ইমেইল" required>
+        <textarea name="message" rows="5" placeholder="আপনার বার্তা লিখুন..." required></textarea>
+        <button type="submit">পাঠান</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    &copy; ২০২৫ CUSADS. সর্বস্বত্ব সংরক্ষিত। <br>
+    Website Maintained by 
+    <a href="https://www.facebook.com/share/16uiLqzTmP/?mibextid=wwXIfr" target="_blank">
+        Israfil Hossain Manik
     </a>
-  </div>
-  <!-- ✅ এখানে নতুন formsubmit form -->
-  <form action="https://formsubmit.co/cusads25@gmail.com" method="POST">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://israfilhossainmanik1.github.io/thanks.html">
+  </footer>
 
-    <input type="text" name="name" placeholder="আপনার নাম" required>
-    <input type="email" name="email" placeholder="আপনার ইমেইল" required>
-    <textarea name="message" rows="5" placeholder="আপনার বার্তা লিখুন..." required></textarea>
-    <button type="submit">পাঠান</button>
-  </form>
-</div>
 </body>
 </html>
