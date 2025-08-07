@@ -1605,20 +1605,28 @@
 <script>
 function requestPin(button) {
     const card = button.closest('.card');
+    const details = card.querySelector('.more-details');
     const pin = card.getAttribute('data-pin');
 
-    // যদি PIN না থাকে → সরাসরি ডিটেইলস দেখাবে
-    if (!pin) {
-        showDetails(card, button);
+    // যদি ডিটেইলস দেখা যাচ্ছে → Hide করে দাও
+    if (details.style.display === "block") {
+        details.style.display = "none";
+        button.textContent = "More Details...";
         return;
     }
 
-    // এই পেজ খোলা থাকা অবস্থায় কতবার ভুল হয়েছে গুনে রাখবে
+    // যদি PIN না থাকে → সরাসরি Show করো
+    if (!pin) {
+        showDetails(details, button);
+        return;
+    }
+
+    // প্রথমবার ভুল গণনা তৈরি করো
     if (!card.attempts) {
         card.attempts = 0;
     }
 
-    // যদি আগেই ৩ বার ভুল হয়, তাহলে ব্লক দেখাবে
+    // যদি ৩ বার ভুল দিয়ে থাকে
     if (card.attempts >= 3) {
         alert("❌ আপনি ৩ বার ভুল PIN দিয়েছেন। পেজ রিফ্রেশ দিয়ে আবার চেষ্টা করুন।");
         return;
@@ -1627,20 +1635,18 @@ function requestPin(button) {
     const enteredPin = prompt("🔐 অনুগ্রহ করে PIN দিন:");
 
     if (enteredPin === pin) {
-        showDetails(card, button);
+        showDetails(details, button);
     } else {
         card.attempts++;
         alert("❌ ভুল PIN! আপনি " + card.attempts + " বার চেষ্টা করেছেন। সর্বোচ্চ ৩ বার চেষ্টা করা যাবে।");
     }
 }
 
-function showDetails(card, button) {
-    const details = card.querySelector('.more-details');
+function showDetails(details, button) {
     details.style.display = "block";
-    button.style.display = "none";
+    button.textContent = "Hide Details";
 }
 </script>
-    
 <!--<script>
     function toggleDetails(btn) {
         const details = btn.nextElementSibling;
