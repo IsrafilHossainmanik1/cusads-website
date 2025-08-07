@@ -1599,6 +1599,46 @@
             Israfil Hossain Manik
         </a>
     </footer>
+
+<script>
+function requestPin(button) {
+    const card = button.closest('.card');
+    const pin = card.getAttribute('data-pin');
+
+    // যদি PIN না থাকে → সরাসরি ডিটেইলস দেখাবে
+    if (!pin) {
+        showDetails(card, button);
+        return;
+    }
+
+    // এই পেজ খোলা থাকা অবস্থায় কতবার ভুল হয়েছে গুনে রাখবে
+    if (!card.attempts) {
+        card.attempts = 0;
+    }
+
+    // যদি আগেই ৩ বার ভুল হয়, তাহলে ব্লক দেখাবে
+    if (card.attempts >= 3) {
+        alert("❌ আপনি ৩ বার ভুল PIN দিয়েছেন। পেজ রিফ্রেশ দিয়ে আবার চেষ্টা করুন।");
+        return;
+    }
+
+    const enteredPin = prompt("🔐 অনুগ্রহ করে PIN দিন:");
+
+    if (enteredPin === pin) {
+        showDetails(card, button);
+    } else {
+        card.attempts++;
+        alert("❌ ভুল PIN! আপনি " + card.attempts + " বার চেষ্টা করেছেন। সর্বোচ্চ ৩ বার চেষ্টা করা যাবে।");
+    }
+}
+
+function showDetails(card, button) {
+    const details = card.querySelector('.more-details');
+    details.style.display = "block";
+    button.style.display = "none";
+}
+</script>
+    
 <!--<script>
     function toggleDetails(btn) {
         const details = btn.nextElementSibling;
@@ -1626,7 +1666,7 @@ function requestPin(button) {
     }
 }
 </script>-->
- <script>
+ <!--<script>
 function requestPin(button) {
     const card = button.closest('.card');
     const pin = card.getAttribute('data-pin');
@@ -1650,7 +1690,7 @@ function showDetails(card, button) {
     details.style.display = "block";
     button.style.display = "none";
 }
-</script> 
+</script> -->
     
 
     
