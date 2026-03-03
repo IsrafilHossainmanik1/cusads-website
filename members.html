@@ -168,7 +168,6 @@
 <input type="text" id="searchInput" onkeyup="filterProfiles()" placeholder="Search student...">
 <!-- 🎓 DEPARTMENT FILTER -->
 <select id="deptFilter" onchange="filterDepartment()">
-
 <option value="all">All Department</option>
 <option value="cse">Computer Science and Engineering (CSE)</option>
 <option value="physics">Physics</option>
@@ -206,15 +205,27 @@
 
 <select id="sessionFilter" onchange="filterProfiles()">
 <option value="all">All Session</option>
+<option value="17-18">17-18</option>
+<option value="18-19">18-19</option>
+<option value="19-20">19-20</option>
+<option value="20-21">20-21</option>
+<option value="21-22">21-22</option>
+<option value="22-23">22-23</option>
 <option value="23-24">23-24</option>
 <option value="24-25">24-25</option>
 </select>
 <!-- 🩸 BLOOD FILTER -->
 <select id="bloodFilter" onchange="filterProfiles()">
 <option value="all">All Blood Group</option>
-<option value="o+">O+</option>
+<option value="a+">A+</option>
+    <option value="a-">A-</option>
 <option value="b+">B+</option>
+    <option value="b-">B-</option>
 <option value="ab+">AB+</option>
+    <option value="ab-">AB-</option>
+<option value="o+">O+</option>
+    <option value="o-">O-</option>
+    
 </select>
 
 </div>
