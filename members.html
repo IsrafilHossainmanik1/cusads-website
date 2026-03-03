@@ -163,11 +163,40 @@
      </div>
          </div> -->
 
+<div class="controls">
 
+<input type="text" id="searchInput" onkeyup="filterProfiles()" placeholder="Search student...">
+
+<select id="deptFilter" onchange="filterProfiles()">
+<option value="all">All Department</option>
+<option value="pharmacy">Pharmacy</option>
+<option value="accounting">Accounting</option>
+<option value="marketing">Marketing</option>
+<option value="mathematics">Mathematics</option>
+<option value="chemistry">Chemistry</option>
+<option value="english">English</option>
+</select>
+
+<select id="sessionFilter" onchange="filterProfiles()">
+<option value="all">All Session</option>
+<option value="23-24">23-24</option>
+<option value="24-25">24-25</option>
+</select>
+
+<select id="bloodFilter" onchange="filterProfiles()">
+<option value="all">All Blood Group</option>
+<option value="o+">O+</option>
+<option value="b+">B+</option>
+<option value="ab+">AB+</option>
+</select>
+
+</div>
+
+<h3>Total Profiles: <span id="profileCount"></span></h3>
 
          
 <h2 class="session-heading">Session: 2017-2018</h2>
-<div class="container">
+<div class="profilecontainer">
 <!-- Mahim Hossain -->
 <div class="card" data-pin="4321">
      <!--<div class="card" data-pin="1234">-->
@@ -2059,7 +2088,57 @@ function showDetails(card, button) {
 }
 </script> -->
     
+<script>
 
+function filterProfiles() {
+
+let search = document.getElementById("searchInput").value.toLowerCase();
+let dept = document.getElementById("deptFilter").value.toLowerCase();
+let session = document.getElementById("sessionFilter").value.toLowerCase();
+let blood = document.getElementById("bloodFilter").value.toLowerCase();
+
+let cards = document.getElementsByClassName("card");
+
+let visibleCount = 0;
+
+for (let i = 0; i < cards.length; i++) {
+
+let text = cards[i].innerText.toLowerCase();
+
+let show = true;
+
+if (search && !text.includes(search)) {
+show = false;
+}
+
+if (dept !== "all" && !text.includes(dept)) {
+show = false;
+}
+
+if (session !== "all" && !text.includes(session)) {
+show = false;
+}
+
+if (blood !== "all" && !text.includes(blood)) {
+show = false;
+}
+
+if (show) {
+cards[i].style.display = "";
+visibleCount++;
+} else {
+cards[i].style.display = "none";
+}
+
+}
+
+document.getElementById("profileCount").innerText = visibleCount;
+
+}
+
+filterProfiles();
+
+</script>
     
 </body>
 </html>
